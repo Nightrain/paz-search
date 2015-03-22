@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SearchModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="SearchModelStoreContainer">
+    <EntitySet Name="base_food" EntityType="SearchModel.Store.base_food" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="base_move" EntityType="SearchModel.Store.base_move" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="base_release" EntityType="SearchModel.Store.base_release" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="base_risk" EntityType="SearchModel.Store.base_risk" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="base_social" EntityType="SearchModel.Store.base_social" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="base_food">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CLASS" Type="nvarchar" MaxLength="255" />
+    <Property Name="PROBCAP" Type="float" />
+    <Property Name="X_SIZE" Type="bigint" />
+    <Property Name="SD_SIZE" Type="bigint" />
+    <Property Name="geom" Type="geometry" />
+  </EntityType>
+  <EntityType Name="base_move">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CLASS" Type="nvarchar" MaxLength="255" />
+    <Property Name="MVL" Type="float" />
+    <Property Name="MSL" Type="bigint" />
+    <Property Name="ENERGYUSED" Type="float" />
+    <Property Name="CROSSING" Type="float" />
+    <Property Name="PR_X" Type="float" />
+    <Property Name="geom" Type="geometry" />
+  </EntityType>
+  <EntityType Name="base_release">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RELEASESIT" Type="real" />
+    <Property Name="MALES" Type="real" />
+    <Property Name="FEMS" Type="real" />
+    <Property Name="geom" Type="geometry" />
+  </EntityType>
+  <EntityType Name="base_risk">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CLASS" Type="nvarchar" MaxLength="255" />
+    <Property Name="Risk" Type="float" />
+    <Property Name="geom" Type="geometry" />
+  </EntityType>
+  <EntityType Name="base_social">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SUITABILIT" Type="nvarchar" MaxLength="255" />
+    <Property Name="OCCUP_MALE" Type="nvarchar" MaxLength="255" />
+    <Property Name="OCCUP_FEMA" Type="nvarchar" MaxLength="255" />
+    <Property Name="DELETE" Type="nvarchar" MaxLength="255" />
+    <Property Name="geom" Type="geometry" />
+  </EntityType>
+</Schema>

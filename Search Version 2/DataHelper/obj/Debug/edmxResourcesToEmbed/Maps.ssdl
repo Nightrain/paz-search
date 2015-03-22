@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SearchModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="base_food">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CLASS" Type="nvarchar" MaxLength="255" />
+    <Property Name="PROBCAP" Type="float" />
+    <Property Name="X_SIZE" Type="bigint" />
+    <Property Name="SD_SIZE" Type="bigint" />
+    <Property Name="geom" Type="geometry" />
+  </EntityType>
+  <EntityType Name="base_move">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CLASS" Type="nvarchar" MaxLength="255" />
+    <Property Name="MVL" Type="float" />
+    <Property Name="MSL" Type="bigint" />
+    <Property Name="ENERGYUSED" Type="float" />
+    <Property Name="CROSSING" Type="float" />
+    <Property Name="PR_X" Type="float" />
+    <Property Name="geom" Type="geometry" />
+  </EntityType>
+  <EntityType Name="base_release">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RELEASESIT" Type="real" />
+    <Property Name="MALES" Type="real" />
+    <Property Name="FEMS" Type="real" />
+    <Property Name="geom" Type="geometry" />
+  </EntityType>
+  <EntityType Name="base_risk">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CLASS" Type="nvarchar" MaxLength="255" />
+    <Property Name="Risk" Type="float" />
+    <Property Name="geom" Type="geometry" />
+  </EntityType>
+  <EntityType Name="base_social">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SUITABILIT" Type="nvarchar" MaxLength="255" />
+    <Property Name="OCCUP_MALE" Type="nvarchar" MaxLength="255" />
+    <Property Name="OCCUP_FEMA" Type="nvarchar" MaxLength="255" />
+    <Property Name="DELETE" Type="nvarchar" MaxLength="255" />
+    <Property Name="geom" Type="geometry" />
+  </EntityType>
+  <EntityContainer Name="SearchModelStoreContainer">
+    <EntitySet Name="base_food" EntityType="Self.base_food" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="base_move" EntityType="Self.base_move" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="base_release" EntityType="Self.base_release" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="base_risk" EntityType="Self.base_risk" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="base_social" EntityType="Self.base_social" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+  </EntityContainer>
+</Schema>
