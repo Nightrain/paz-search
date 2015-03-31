@@ -31,3 +31,6 @@ F:\Search\Search Version 2\MapManager\bin\Debug\DotSpatial.Projections.xml
 F:\Search\Search Version 2\MapManager\bin\Debug\DotSpatial.Mono.xml
 F:\Search\Search Version 2\MapManager\obj\Debug\MapManager.dll
 F:\Search\Search Version 2\MapManager\obj\Debug\MapManager.pdb
+C:\Users\bob.cummings\Source\Repos\paz-search\Search Version 2\MapManager\obj\Debug\MapManager.csprojResolveAssemblyReference.cache
+C:\Users\bob.cummings\Source\Repos\paz-search\Search Version 2\MapManager\obj\Debug\MapManager.dll
+C:\Users\bob.cummings\Source\Repos\paz-search\Search Version 2\MapManager\obj\Debug\MapManager.pdb

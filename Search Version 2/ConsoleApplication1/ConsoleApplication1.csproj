@@ -102,10 +102,6 @@
       <Project>{8fa65f2e-de59-4583-b028-2e90fbf539f7}</Project>
       <Name>Animals</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GIS_Helper\DataHelper.csproj">
-      <Project>{5a000caa-9a89-4f07-b39a-a26065e9f5fd}</Project>
-      <Name>DataHelper</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MapManager\MapManager.csproj">
       <Project>{9716a768-fca5-420f-95b6-d83c981fe55f}</Project>
       <Name>MapManager</Name>

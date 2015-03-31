@@ -63,10 +63,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GIS_Helper\DataHelper.csproj">
-      <Project>{5a000caa-9a89-4f07-b39a-a26065e9f5fd}</Project>
-      <Name>DataHelper</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Utility\Utility.csproj">
       <Project>{70150438-01a0-41f9-8c35-a2727645db3a}</Project>
       <Name>Utility</Name>

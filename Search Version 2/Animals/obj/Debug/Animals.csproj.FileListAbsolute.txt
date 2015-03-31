@@ -46,3 +46,6 @@ F:\Search\Search Version 2\Animals\bin\Debug\DotSpatial.Projections.xml
 F:\Search\Search Version 2\Animals\bin\Debug\DotSpatial.Mono.xml
 F:\Search\Search Version 2\Animals\obj\Debug\Animals.dll
 F:\Search\Search Version 2\Animals\obj\Debug\Animals.pdb
+C:\Users\bob.cummings\Source\Repos\paz-search\Search Version 2\Animals\obj\Debug\Animals.csprojResolveAssemblyReference.cache
+C:\Users\bob.cummings\Source\Repos\paz-search\Search Version 2\Animals\obj\Debug\Animals.dll
+C:\Users\bob.cummings\Source\Repos\paz-search\Search Version 2\Animals\obj\Debug\Animals.pdb
